@@ -366,6 +366,27 @@ a {
     display: none;
 }
 
+.ani {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    color: red;
+}
+
+.scroll-animation {
+    opacity: 1;
+    rotate: 0deg;
+    color: #eee;
+}
+
+.anis {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.scroll-animations {
+    opacity: 1;
+}
+
 @media(max-width:1581px) {
     .but {
         margin-left: 20px;
@@ -430,6 +451,9 @@ a {
         top: 0px;
         background-color: #000000;
     }
+    .nav-links {
+        color: #eee;
+    }
     @media (max-width:645px) {
         .reg {
             margin-top: 40px;
@@ -460,7 +484,7 @@ a {
         display: block;
         width: 50%;
         background-color: #333;
-        height: 0%;
+        height: 10%;
         text-align: right;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
@@ -470,6 +494,7 @@ a {
     .nav>.nav-links>a {
         display: block;
         width: 100%;
+        color: #eee;
     }
     .nav>#nav-check:not(:checked)~.nav-links {
         height: 0px;
